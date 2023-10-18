@@ -1,5 +1,7 @@
-### Luyện tập 1
-  
+### Luyện tập 1 - my_ant_ti3m
+
+Luyện tập cho Zero2Automated
+
 Link phishing: https://lingiangcosmetic.com/quotation
 
 ![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20112942.png)
@@ -200,6 +202,7 @@ Thực hiện phân tích đoạn shellcode với IDA:
 ![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20133128.png)
 
 Phân tích shellcode thấy chức năng của nó drop và thực thi file PE độc hại
+Trích xuất file PE từ shellcode thu được:
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20151005.png)
 
-![](https://hackmd.io/_uploads/HylAse6b6.png)
-
+To be continued!!!
