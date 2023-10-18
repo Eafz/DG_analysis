@@ -2,18 +2,18 @@
   
 Link phishing: https://lingiangcosmetic.com/quotation
 
-![](https://hackmd.io/_uploads/S1OrkypWp.png)
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20112942.png)
 
 View page source ta có thể thấy đường dẫn file ChungLG.js "đáng ngờ". Sau đó thông qua `search-ms` đẫn người dùng truy cập đến địa chỉ `194.87.31.108:8080` để thực hiện tải file độc hại
 
-![](https://hackmd.io/_uploads/By0leJaZT.png)
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20113008.png)
 
 
-![](https://hackmd.io/_uploads/r16by1pbT.png)
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20112838.png)
 
 Người dùng bị lừa tải file shortcut(.lnk) và thực thi powershell script độc hại bị nhúng trong file `.lnk`
 
-![](https://hackmd.io/_uploads/rkGfZy6-p.png)
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20113532.png)
 
 
 ```
@@ -66,12 +66,12 @@ Chức năng của file `SUCBAm.vbs` gửi tất cả tiến trình đang chạy
 
 malicous command được nhận lại từ CnC Server:
 
-![](https://hackmd.io/_uploads/r1ryqxpb6.png)
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20132318.png)
 
 
 Lệnh hình trên với chức năng tải tệp thực thi Autoit.exe và tệp autoit script(.au3) độc hại và thực thi nó. 
 
-Nội dụng file autoscript độc hại trích xuất:
+Nội dụng file autoscript độc hại sau khi trích xuất:
 
 ```
 LOCAL $XHKOUYMY
@@ -195,7 +195,9 @@ LOCAL $EYMMI
 LOCAL $QTZMYCV
 ```
 
-Đoạn mã trên autoit script trên có giải mã phần dữ liệu đươc đặt dữa 2 kí tự `padoru` và thưc hiện tiêm và thực thi đoạn  shellcode
+Đoạn mã trên autoit script trên có giải mã phần dữ liệu đươc đặt dữa 2 kí tự `padoru` và thưc hiện tiêm và thực thi đoạn [shellcode](https://github.com/myantti3m/DG_analysis/blob/main/shell.sc)
+Thực hiện phân tích đoạn shellcode với IDA:
+![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20133128.png)
 
 Phân tích shellcode thấy chức năng của nó drop và thực thi file PE độc hại
 
