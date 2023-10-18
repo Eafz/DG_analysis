@@ -197,7 +197,7 @@ LOCAL $EYMMI
 LOCAL $QTZMYCV
 ```
 
-Đoạn mã trên autoit script trên có giải mã phần dữ liệu đươc đặt dữa 2 kí tự `padoru` và thưc hiện tiêm và thực thi đoạn [shellcode](https://github.com/myantti3m/DG_analysis/blob/main/shell.sc)
+Đoạn mã trên autoit script trên có giải mã phần dữ liệu đươc đặt giữa 2 kí tự `padoru` và thưc hiện tiêm và thực thi đoạn [shellcode](https://github.com/myantti3m/DG_analysis/blob/main/shell.sc)
 Thực hiện phân tích đoạn shellcode với IDA:
 ![](https://github.com/myantti3m/DG_analysis/blob/main/Screenshot%202023-10-18%20133128.png)
 
